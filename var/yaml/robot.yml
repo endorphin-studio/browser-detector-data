@@ -33,6 +33,7 @@ robot:
         Nazaries Information Technologies: "http://www.nazaries.com/"
         DownNotifier.com: "https://www.downnotifier.com/"
         SEOmoz Inc.: "https://moz.com/"
+        Exabot: "http://www.exabot.com/"
     types:
         Search Engine:
             Google Inc.:
@@ -124,3 +125,5 @@ robot:
                 ScoutJet: "ScoutJet"
             SEOmoz Inc.:
                 DotBot: "(DotBot|dotbot)"
+            Exabot:
+                Exabot: "Exabot"
