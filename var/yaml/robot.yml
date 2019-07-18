@@ -34,6 +34,7 @@ robot:
         DownNotifier.com: "https://www.downnotifier.com/"
         SEOmoz Inc.: "https://moz.com/"
         Exabot: "http://www.exabot.com/"
+        TwitterBot: "not available"
     types:
         Search Engine:
             Google Inc.:
@@ -127,3 +128,5 @@ robot:
                 DotBot: "(DotBot|dotbot)"
             Exabot:
                 Exabot: "Exabot"
+            TwitterBot:
+                TwitterBot: "TwitterBot"
