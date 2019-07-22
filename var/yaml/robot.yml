@@ -129,4 +129,4 @@ robot:
             Exabot:
                 Exabot: "Exabot"
             TwitterBot:
-                TwitterBot: "TwitterBot"
+                TwitterBot: "(TwitterBot|Twitterbot)"
