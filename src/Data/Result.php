@@ -153,7 +153,7 @@ class Result implements \JsonSerializable
      * Result constructor.
      * @param string $userAgent User Agent
      */
-    public function __construct(string $userAgent, Detector $detector)
+    public function __construct(string $userAgent, Detector $detector = null)
     {
         $this->os = new Os($this);
         $this->device = new Device($this);
