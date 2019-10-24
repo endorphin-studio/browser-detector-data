@@ -9,6 +9,8 @@
 
 namespace EndorphinStudio\Detector\Data;
 
+use EndorphinStudio\Detector\Detector;
+
 /**
  * Class Result
  * Class with result of detection
@@ -16,6 +18,19 @@ namespace EndorphinStudio\Detector\Data;
  */
 class Result implements \JsonSerializable
 {
+    /**
+     * @var Detector
+     */
+    private $detector;
+
+    public function getDetectorVersion(): string
+    {
+        if(!is_null($this->detector) && method_exists($this->detector, 'getVersion')) {
+            return $this->detector->getVersion();
+        }
+        return '4.0.4';
+    }
+
     /**
      * Get User Agent
      * @return string
@@ -138,13 +153,14 @@ class Result implements \JsonSerializable
      * Result constructor.
      * @param string $userAgent User Agent
      */
-    public function __construct(string $userAgent)
+    public function __construct(string $userAgent, Detector $detector)
     {
         $this->os = new Os($this);
         $this->device = new Device($this);
         $this->browser = new Browser($this);
         $this->robot = new Robot($this);
         $this->userAgent = $userAgent;
+        $this->detector = $detector;
     }
 
     /**
