@@ -22,6 +22,7 @@ class Result implements \JsonSerializable
      * @var Detector
      */
     private $detector;
+    private $version = '1.0.7';
 
     public function getDetectorVersion(): string
     {
@@ -29,6 +30,11 @@ class Result implements \JsonSerializable
             return $this->detector->getVersion();
         }
         return '4.0.4';
+    }
+
+    public function getDataVersion(): string
+    {
+        return $this->version;
     }
 
     /**
