@@ -22,9 +22,9 @@ class Result implements \JsonSerializable
      * @var Detector
      */
     private $detector;
-    private $version = '1.0.7';
+    private $version = '1.0.8';
 
-    public function getDetectorVersion(): string
+    public function getCoreVersion(): string
     {
         if(!is_null($this->detector) && method_exists($this->detector, 'getVersion')) {
             return $this->detector->getVersion();
@@ -32,9 +32,21 @@ class Result implements \JsonSerializable
         return '4.0.4';
     }
 
+    public function getModulesVersions(): array
+    {
+        return [
+            'endorphin-studio/browser-detector-data' => $this->version
+        ];
+    }
+
+    public function getDetectorVersion(): string
+    {
+        return 'method'.__METHOD__.' is deprecated; soon it will be removed';
+    }
+
     public function getDataVersion(): string
     {
-        return $this->version;
+        return 'method'.__METHOD__.' is deprecated; soon it will be removed';
     }
 
     /**
