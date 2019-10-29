@@ -72,6 +72,12 @@ browser:
             attributes:
                 isMobile: true
                 isTouch: true
+        Silk:
+            pattern: "Silk"
+            version: "Silk"
+            attributes:
+                isMobile: true
+                isTouch: true
     desktop:
         Epiphany:
             default: true
@@ -137,6 +143,9 @@ browser:
             default: true
         Konqueror:
             default: true
+        Playstation Browser:
+            pattern: "PlayStation 4"
+            version: "PlayStation 4"
     default:
         name: "not available"
         type: "not available"

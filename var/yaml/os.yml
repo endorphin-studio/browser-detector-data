@@ -2,7 +2,7 @@
 # @author Serhii Nekhaienko <sergey.nekhaenko@gmail.com>
 # @license GPL
 # @copyright Serhii Nekhaienko &copy 2019
-# @version 1.0.7
+# @version 1.0.8
 # @project endorphin-studio/browser-detector-data
 ########################################################################
 os:
@@ -31,9 +31,9 @@ os:
             Qtopia:
                 default: true
         console:
-            Playstation 4:
-                pattern: "(PlayStation 4)"
-                version: "(PlayStation 4)"
+            Playstation Os:
+                pattern: "(PlayStation 4|PlayStation Vita)"
+                version: "(PlayStation Vita|PlayStation Vita)"
         tv:
             Android:
                 pattern: "(GoogleTV|SmartTv|PhilipsTV|OMI)"
