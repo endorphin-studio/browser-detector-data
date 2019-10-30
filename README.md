@@ -8,7 +8,7 @@ Data for [endorphin-studio/browser-detector](https://github.com/endorphin-studio
 
 ## About
 	Author: Serhii Nekhaienko <sergey.nekhaenko@gmail.com>
-	Current Version: 1.0.8
+	Current Version: 1.0.9
 	License: MIT
 
 ## Requirements
