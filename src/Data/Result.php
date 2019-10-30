@@ -22,7 +22,7 @@ class Result implements \JsonSerializable
      * @var Detector
      */
     private $detector;
-    private $version = '1.0.9';
+    private $version = '1.1.0';
 
     public function getCoreVersion(): string
     {
