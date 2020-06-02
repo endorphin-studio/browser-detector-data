@@ -20,7 +20,7 @@ os:
                 version: "(Windows|Win|WP)"
     mac:
         tv:
-            Apple:
+            tvOS:
                 pattern: "AppleTV"
         mobile:
             iOS:
@@ -58,12 +58,10 @@ os:
         console:
             Playstation Os:
                 pattern: "(PlayStation 4|PlayStation Vita)"
-                version: "(PlayStation Vita|PlayStation Vita)"
+                version: "(PlayStation 4|PlayStation Vita)"
         tv:
             Android:
                 pattern: "(GoogleTV|SmartTv|PhilipsTV|OMI)"
-            tvOS:
-                pattern: "AppleTV"
         desktop:
             AROS:
                 pattern: "(Paros|Aros)"

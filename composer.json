@@ -1,8 +1,7 @@
 {
   "name": "endorphin-studio/browser-detector-data",
-  "description": "Data for endorphin-studio/browser-detector",
-  "minimum-stability": "stable",
   "type": "library",
+  "description": "Data for endorphin-studio/browser-detector",
   "license": "MIT",
   "authors": [
     {
@@ -11,10 +10,17 @@
     }
   ],
   "require": {
-    "php": ">=7.0",
-    "endorphin-studio/browser-detector-tools": ">=1.0.0",
-    "symfony/yaml": ">=v3.4.14",
-    "symfony/http-foundation": ">=v3.4.14"
+    "php": "^7.0.8",
+    "endorphin-studio/browser-detector-tools": "dev-master",
+    "symfony/yaml": "^3.4.40 || ^4.4.9 || ^5.1.0",
+    "symfony/http-foundation": "^3.4.40 || ^4.4.9 || ^5.1.0"
+  },
+  "config": {
+    "platform": {
+      "php": "7.0.8"
+    },
+    "preferred-install": "dist",
+    "sort-packages": true
   },
   "autoload": {
     "psr-4": {
@@ -22,5 +28,13 @@
       "EndorphinStudio\\Detector\\Storage\\":  "src/Storage",
       "EndorphinStudio\\Detector\\Exception\\":  "src/Exception"
     }
-  }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/mimmi20/browser-detector-tools"
+    }
+  ]
 }
