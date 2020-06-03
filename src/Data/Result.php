@@ -22,7 +22,7 @@ class Result implements \JsonSerializable
      * @var Detector
      */
     private $detector;
-    private $version = '1.1.0';
+    private $version = '1.3';
 
     public function getCoreVersion(): string
     {
@@ -73,15 +73,6 @@ class Result implements \JsonSerializable
      * @var Device Result of device detection
      */
     protected $device;
-    /**
-     * @var Robot Result of robot detection
-     */
-    protected $robot;
-
-    /**
-     * @var boolean true if user is robot
-     */
-    protected $isRobot = false;
 
     /**
      * @var boolean true if device is touch
@@ -91,24 +82,6 @@ class Result implements \JsonSerializable
      * @var boolean true if device is mobile
      */
     protected $isMobile = false;
-
-    /**
-     * True if user is robot
-     * @return bool
-     */
-    public function isRobot(): bool
-    {
-        return $this->isRobot;
-    }
-
-    /**
-     * Setter
-     * @param bool $isRobot
-     */
-    public function setIsRobot(bool $isRobot)
-    {
-        $this->isRobot = $isRobot;
-    }
 
     /**
      * True if user is touch
@@ -176,7 +149,6 @@ class Result implements \JsonSerializable
         $this->os = new Os($this);
         $this->device = new Device($this);
         $this->browser = new Browser($this);
-        $this->robot = new Robot($this);
         $this->userAgent = $userAgent;
         $this->detector = $detector;
     }
