@@ -75,6 +75,7 @@ abstract class AbstractData implements \JsonSerializable
         $this->result = $result;
     }
 
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $fields = get_object_vars($this);

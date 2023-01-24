@@ -189,6 +189,7 @@ class Result implements \JsonSerializable
         return $this->robot;
     }
 
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         return get_object_vars($this);
