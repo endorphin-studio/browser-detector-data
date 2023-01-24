@@ -53,6 +53,7 @@ class Model implements \JsonSerializable
      */
     private $model = '';
 
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         return get_object_vars($this);
